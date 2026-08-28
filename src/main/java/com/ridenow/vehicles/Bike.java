@@ -6,10 +6,6 @@ public class Bike extends Vehicle {
         super(vehicleId, licensePlate, baseFare);
     }
 
-    private double fare(double realFare) {
-        return Math.min(realFare, 15);
-    }
-
     @Override
     public double calculateFare(double distanceKm) {
         return baseFare + distanceKm * 0.20;
