@@ -14,5 +14,9 @@ public class Main {
         for (Vehicle v : fleet) {
             v.printSummary();
         }
+
+        for (Vehicle v : fleet) {
+            System.out.println(v.calculateFare(100));
+        }
     }
 }
