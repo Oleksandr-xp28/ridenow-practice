@@ -8,6 +8,6 @@ public class Car extends Vehicle {
 
     @Override
     public double calculateFare(double distanceKm) {
-        return super.calculateFare(distanceKm * 0.50);
+        return baseFare + distanceKm * 0.50;
     }
 }

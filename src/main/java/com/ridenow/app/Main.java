@@ -16,7 +16,7 @@ public class Main {
         }
 
         for (Vehicle v : fleet) {
-            System.out.println(v.calculateFare(100));
+            System.out.println(v.calculateFare(10));
         }
     }
 }

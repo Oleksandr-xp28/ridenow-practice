@@ -14,10 +14,6 @@ public class Vehicle {
     public double calculateFare(double distanceKm){
         return baseFare + distanceKm;
     }
-    public double calculateFare(double distanceKm, double surgeMultiplier){
-        return calculateFare(distanceKm) * surgeMultiplier;
-        //return (baseFare + distanceKm) * surgeMultiplier;
-    }
 
     public void printSummary(){
         System.out.print("Vehicle ID: " + getVehicleId() +"; ");

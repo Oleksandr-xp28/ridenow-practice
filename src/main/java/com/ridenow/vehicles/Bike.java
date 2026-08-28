@@ -12,11 +12,6 @@ public class Bike extends Vehicle {
 
     @Override
     public double calculateFare(double distanceKm) {
-        return fare(super.calculateFare(distanceKm * 0.20));
-    }
-
-    @Override
-    public double calculateFare(double distanceKm, double surgeMultiplier) {
-        return super.calculateFare(distanceKm);
+        return baseFare + distanceKm * 0.20;
     }
 }

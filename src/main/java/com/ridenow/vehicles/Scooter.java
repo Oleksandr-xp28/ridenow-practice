@@ -8,11 +8,6 @@ public class Scooter extends Vehicle {
 
     @Override
     public double calculateFare(double distanceKm) {
-        return super.calculateFare(distanceKm * 0.30);
-    }
-
-    @Override
-    public double calculateFare(double distanceKm, double surgeMultiplier) {
-        return super.calculateFare(distanceKm, Math.min(surgeMultiplier, 1.2));
+        return baseFare + distanceKm * 0.30;
     }
 }
